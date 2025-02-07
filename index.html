@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Invitation</title>
+    <script>
+        function confirmInvite() {
+            alert("Yay! Can't wait to see you! ❤️");
+        }
+
+        function runAway(btn) {
+            btn.style.position = "absolute";
+            btn.style.left = Math.random() * window.innerWidth + "px";
+            btn.style.top = Math.random() * window.innerHeight + "px";
+        }
+    </script>
+</head>
+<body style="text-align:center; font-family: Arial, sans-serif;">
+    <h1>Will you be my Valentine? 💖</h1>
+    <button onclick="confirmInvite()" style="padding: 10px 20px; font-size: 18px;">Yes</button>
+    <button onmouseover="runAway(this)" style="padding: 10px 20px; font-size: 18px; position:relative;">No</button>
+</body>
+</html>
